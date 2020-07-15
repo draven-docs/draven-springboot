@@ -1,0 +1,4 @@
+com/noxus/draven/rocketmq/RocketApplication.class
+com/noxus/draven/rocketmq/controller/UserProducer.class
+com/noxus/draven/rocketmq/entity/UserContent.class
+com/noxus/draven/rocketmq/controller/UserConsumer.class

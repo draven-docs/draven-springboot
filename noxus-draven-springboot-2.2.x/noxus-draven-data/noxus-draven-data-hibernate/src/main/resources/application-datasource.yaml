@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    primary:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://116.196.77.250:3306/user?characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+    second:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://116.196.77.250:3306/users?characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+  jpa:
+    #properties:
+    #database: mysql
+    #database-platform: mysql
+    hibernate:
+      format_sql: true
+      #ddl-auto: update
+      #dialect: org.hibernate.dialect.MySQL57Dialect
+      primary-dialect: org.hibernate.dialect.MySQL55Dialect
+      second-dialect: org.hibernate.dialect.MySQL55Dialect
+    show-sql: true
+  main:
+    allow-bean-definition-overriding: true

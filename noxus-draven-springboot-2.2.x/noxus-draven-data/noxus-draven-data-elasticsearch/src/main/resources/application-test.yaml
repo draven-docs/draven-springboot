@@ -1,0 +1,16 @@
+server:
+  port: 8081
+# elasticsearch
+spring:
+  application:
+    name: elasticsearch
+  data:
+    elasticsearch:
+      # cluster-name: elasticsearch  #集群名，默认elasticsearch
+      cluster-nodes: 116.196.77.250:9300 #节点地址，多个节点用逗号隔开
+      repositories:
+        enabled: true
+management:
+  health:
+    elasticsearch:
+      enabled: false

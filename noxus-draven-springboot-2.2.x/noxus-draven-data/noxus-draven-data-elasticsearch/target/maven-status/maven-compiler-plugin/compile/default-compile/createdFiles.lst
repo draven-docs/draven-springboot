@@ -1,0 +1,3 @@
+com/noxus/draven/elasticsearch/repository/ItemRepository.class
+com/noxus/draven/elasticsearch/entity/Item.class
+com/noxus/draven/elasticsearch/ElasticApplication.class

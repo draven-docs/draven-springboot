@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://116.196.77.250:3306/user?characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    hikari:
+      connection-timeout: 500
+      idle-timeout: 600000
+      initialization-fail-timeout: 1000
+      login-timeout: 500
+      max-lifetime: 1800000
+      maximum-pool-size: 2
+      minimum-idle: 1
+      validation-timeout: 1000
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper: debug

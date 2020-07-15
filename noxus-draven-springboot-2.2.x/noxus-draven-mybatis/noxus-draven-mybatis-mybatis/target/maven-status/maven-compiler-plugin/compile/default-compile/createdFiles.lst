@@ -1,0 +1,10 @@
+com/noxus/draven/mybatis/MyBatisApplication.class
+com/noxus/draven/mybatis/entity/UserExample.class
+com/noxus/draven/mybatis/config/GeneratorSqlmap.class
+com/noxus/draven/mybatis/controller/UserController.class
+com/noxus/draven/mybatis/entity/UserExample$Criteria.class
+com/noxus/draven/mybatis/entity/User.class
+com/noxus/draven/mybatis/entity/UserWithBLOBs.class
+com/noxus/draven/mybatis/entity/UserExample$GeneratedCriteria.class
+com/noxus/draven/mybatis/mapper/UserMapper.class
+com/noxus/draven/mybatis/entity/UserExample$Criterion.class

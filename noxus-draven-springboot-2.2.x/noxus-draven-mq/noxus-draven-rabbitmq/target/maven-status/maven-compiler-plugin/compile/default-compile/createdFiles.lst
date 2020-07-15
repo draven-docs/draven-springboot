@@ -1,0 +1,13 @@
+com/noxus/draven/rabbitmq/customer/fanout/FanoutCustomerTwo.class
+com/noxus/draven/rabbitmq/demo/provider/OrderSendService.class
+com/noxus/draven/rabbitmq/customer/direct/DirectCustomer.class
+com/noxus/draven/rabbitmq/customer/topic/TopCustomerOne.class
+com/noxus/draven/rabbitmq/demo/customer/LogsReceiver.class
+com/noxus/draven/rabbitmq/RabbitMQApplication.class
+com/noxus/draven/rabbitmq/customer/topic/TopCustomer.class
+com/noxus/draven/rabbitmq/customer/topic/TopCustomerTwo.class
+com/noxus/draven/rabbitmq/demo/customer/InfoReceiver.class
+com/noxus/draven/rabbitmq/demo/customer/ErrorReceiver.class
+com/noxus/draven/rabbitmq/customer/fanout/FanoutCustomer.class
+com/noxus/draven/rabbitmq/demo/provider/UserSendService.class
+com/noxus/draven/rabbitmq/customer/fanout/FanoutCustomerOne.class

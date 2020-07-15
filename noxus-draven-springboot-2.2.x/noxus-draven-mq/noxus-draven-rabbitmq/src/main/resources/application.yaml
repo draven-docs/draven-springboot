@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: 172.16.244.128
+    username: guest
+    password: guest
+
+mq:
+  config:
+    #交换器名称
+    exchange_name: log.topic
+    #队列名称
+    queue_name:
+      info: logs.info
+      error: logs.error
+      logs: logs.all

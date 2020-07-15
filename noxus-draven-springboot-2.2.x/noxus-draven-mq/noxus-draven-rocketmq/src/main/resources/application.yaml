@@ -1,0 +1,6 @@
+server:
+  port: 8082
+rocketmq:
+  name-server: 116.196.77.250:9876
+  producer:
+    group: test-group

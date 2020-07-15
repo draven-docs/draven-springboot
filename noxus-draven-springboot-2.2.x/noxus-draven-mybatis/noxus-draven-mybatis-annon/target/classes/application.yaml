@@ -1,0 +1,38 @@
+server:
+  port: 8989
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://116.196.77.250:3306/master?characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+      type: com.zaxxer.hikari.HikariDataSource
+    cluster:
+      - key: slave1
+        url: jdbc:mysql://116.196.77.250:3306/slave1?characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+        #idle-timeout: 20000
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: root
+        type: com.zaxxer.hikari.HikariDataSource
+      - key: slave2
+        url: jdbc:mysql://116.196.77.250:3306/slave2?characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: root
+        #type: com.zaxxer.hikari.HikariDataSource
+mybatis:
+  mapper-locations: classpath:/mybatis/*.xml
+  # config-location:  classpath:/config/mybatis-config.xml
+  type-aliases-package: com.noxus.draven.annon.entity
+
+
+logging:
+  level:
+    com:
+      yukong:
+        chapter5:
+          repository: debug
+  main:
+    allow-bean-definition-overriding: true
