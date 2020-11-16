@@ -1,0 +1,14 @@
+server:
+  port: 30000
+# http://localhost:30000/actuator/health/liveness
+# http://localhost:30000/actuator/health/readiness
+management:
+  endpoint:
+    health:
+      enabled: true
+      probes:
+        enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health, info

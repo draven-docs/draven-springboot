@@ -1,0 +1,12 @@
+server:
+  port: 30000
+  # IMMEDIATE GRACEFUL
+  shutdown: IMMEDIATE
+
+spring:
+  lifecycle:
+    # 执行完成后宽限n秒
+    timeout-per-shutdown-phase: 2s
+  webflux:
+    base-path: /webfluxBase
+
