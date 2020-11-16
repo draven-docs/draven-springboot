@@ -1,0 +1,55 @@
+server:
+  port: 4000
+#spring:
+#  datasource:
+#    initialization-mode: ALWAYS
+#    url: jdbc:h2:~/test
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password: 123456
+#  h2:
+#    console:
+#      path: /h2-console
+#      enabled: true
+
+
+#spring:
+#  datasource:
+#    initialization-mode: ALWAYS
+#    url: jdbc:hsqldb:~/test
+#    driver-class-name: org.hsqldb.jdbcDriver
+#    username: sa
+#    password: 123456
+
+
+#spring:
+#  datasource:
+#    initialization-mode: ALWAYS
+#    # path 指数据库目录
+#    url: jdbc:derby:path/xxxdb;create=true
+#    driver-class-name: org.apache.derby.iapi.jdbc.InternalDriver
+#    username: sa
+#    password: 123456
+
+
+
+
+#H2db配置
+#指定一个绝对的路径;
+#spring.datasource.url = jdbc:h2:file:D:/test/h2/test
+##使用~标明位置 "~"这个符号代表的就是当前登录到操作系统的用户对应的用户目录
+##spring.datasource.url = jdbc:h2:file:~/.h2/testdb
+#spring.datasource.username = sa
+#spring.datasource.password = sa
+#spring.datasource.driverClassName = org.h2.Driver
+
+
+#  #数据库通用配置
+#  spring.jpa.show-sql = true
+#  spring.jpa.hibernate.ddl-auto = update
+#  #Hsql数据库配置
+#  spring.datasource.url = jdbc:hsqldb:file:D:/test/testdb2
+#  #spring.datasource.url = jdbc:h2:file:~/.h2/testdb
+#  spring.datasource.username = sa
+#  spring.datasource.password = sa
+#  spring.datasource.driverClassName =org.hsqldb.jdbcDriver

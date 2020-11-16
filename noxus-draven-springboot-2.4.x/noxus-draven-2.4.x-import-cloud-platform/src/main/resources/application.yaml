@@ -1,0 +1,45 @@
+# 未完成
+server:
+  port: 30004
+
+spring:
+  application:
+    name: demo
+    #  profiles:
+    #    active: dev
+  config:
+    activate:
+      on-cloud-platform: "kubernetes"
+    on-profile: dev
+    import: configtree:/Users/draven/Documents/documents/java/documents/draven-springboot/noxus-draven-springboot-2.4.x/noxus-draven-2.4.x-import-cloud-platform/src/main/resources/default.properties/default.properties
+#    name: default
+#    #location: 'classpath:/default.properties'
+#    import: classpath:/default.properties
+
+demo: demo
+#spring:
+
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+demo: test
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+      #on-cloud-platform: kubernetes
+demo: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: pro
+demo: pro

@@ -1,0 +1,7 @@
+server:
+  port: 30005
+spring:
+  config:
+    on-location-not-found: ignore
+
+

@@ -1,0 +1,15 @@
+spring:
+  config:
+    on-location-not-found: ignore
+    # classpath file configtree
+    import: "classpath:/default.properties[.properties]"
+
+    # import: classpath:/test.properties[.yaml]
+    # 向下兼容 springboot2.3
+    # use-legacy-processing: true
+    # 以下两个命令 只能使用命令行
+    # name: default
+    # location: 'classpath:/default.properties'
+    # 以上两个命令 只能使用命令行
+
+    # spring.config.on-location-not-found=ignore
