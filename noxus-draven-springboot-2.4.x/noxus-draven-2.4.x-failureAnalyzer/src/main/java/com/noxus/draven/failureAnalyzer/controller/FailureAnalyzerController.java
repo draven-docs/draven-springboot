@@ -23,7 +23,7 @@ public class FailureAnalyzerController {
     public FailureAnalyzerController() {
         try {
             int i = 1;
-           // i = i / 0;
+            //i = i / 0;
         } catch (Exception e) {
             throw new CheckException("失败分析案例");
         }

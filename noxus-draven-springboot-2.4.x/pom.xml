@@ -13,6 +13,8 @@
         <module>noxus-draven-2.4.x-named</module>
         <module>noxus-draven-2.4.x-caching</module>
         <module>noxus-draven-2.4.x-failureAnalyzer</module>
+        <module>noxus-draven-2.4.x-starter</module>
+        <module>noxus-draven-2.4.x-starter-demo</module>
 
     </modules>
 
