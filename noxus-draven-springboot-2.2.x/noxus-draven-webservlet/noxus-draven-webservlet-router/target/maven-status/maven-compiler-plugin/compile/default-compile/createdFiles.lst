@@ -1,8 +1,0 @@
-com/noxus/draven/router/RouterApplication.class
-com/noxus/draven/router/handlers/UserHandler.class
-com/noxus/draven/router/handlers/ExceptionHandler.class
-com/noxus/draven/router/exceptions/CheckUtils.class
-com/noxus/draven/router/repository/UserRepository.class
-com/noxus/draven/router/routers/AllRouters.class
-com/noxus/draven/router/advice/AdviceException.class
-com/noxus/draven/router/domain/User.class
