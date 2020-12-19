@@ -17,15 +17,21 @@ import org.springframework.web.bind.annotation.RestController;
 public class FailureAnalyzerController {
 
 
-    @RequestMapping("/hello")
-    public String test() {
-        String hello = "hello";
+    /**
+     * 模拟启动异常
+     */
+    public FailureAnalyzerController() {
         try {
             int i = 1;
-            i = i / 0;
+           // i = i / 0;
         } catch (Exception e) {
             throw new CheckException("失败分析案例");
         }
+    }
+
+    @RequestMapping("/hello")
+    public String test() {
+        String hello = "hello";
         return hello;
     }
 }

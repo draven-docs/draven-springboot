@@ -9,7 +9,7 @@ import org.springframework.context.EnvironmentAware;
 import org.springframework.core.env.Environment;
 
 /**
- * @author lengleng
+ * @author LoggingFailureAnalysisReporter
  * @date 2020/11/19
  * <p>
  * 格式化异常信息，方便启动时观察。
@@ -20,6 +20,13 @@ public class CheckFailureAnalyzer extends AbstractFailureAnalyzer<CheckException
     protected FailureAnalysis analyze(Throwable rootFailure, CheckException cause) {
 
         return new FailureAnalysis(cause.getMessage(), "解决方案参考: http://www.baidu.com", cause);
+    }
+
+    @Override
+    public FailureAnalysis analyze(Throwable failure) {
+        String message = failure.getMessage();
+        System.out.println(message);
+        return super.analyze(failure);
     }
 
     @Override
