@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "acme.checkLocation",
+      "type": "com.noxus.draven.starters.configuration.AcmeProperties",
+      "sourceType": "com.noxus.draven.starters.configuration.AcmeProperties"
+    },
+    {
+      "name": "acme.date",
+      "type": "com.noxus.draven.starters.configuration.AcmeProperties",
+      "sourceType": "com.noxus.draven.starters.configuration.AcmeProperties"
+    },
+    {
+      "name": "acme.MyDemo",
+      "type": "com.noxus.draven.starters.configuration.AcmeProperties",
+      "sourceType": "com.noxus.draven.starters.configuration.AcmeProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "acme.checkLocation",
+      "type": "java.lang.Boolean",
+      "description": "AcmeProperties config",
+      "sourceType": "com.noxus.draven.starters.configuration.AcmeProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "acme.date",
+      "type": "java.util.Date",
+      "description": "AcmeProperties config",
+      "sourceType": "com.noxus.draven.starters.configuration.AcmeProperties"
+    },
+    {
+      "name": "acme.MyDemo",
+      "type": "java.lang.String",
+      "description": "AcmeProperties config",
+      "sourceType": "com.noxus.draven.starters.configuration.AcmeProperties",
+      "defaultValue": "demo"
+    }
+  ],
+  "hints": []
+}

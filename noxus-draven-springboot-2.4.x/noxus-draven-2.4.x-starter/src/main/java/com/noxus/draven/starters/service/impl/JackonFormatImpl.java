@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.noxus.draven.starters.configuration.AcmeProperties;
 import com.noxus.draven.starters.service.Formatter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,7 @@ import java.util.Date;
  */
 @Service
 @EnableConfigurationProperties(AcmeProperties.class)
+@Slf4j
 public class JackonFormatImpl implements Formatter {
 
     @Autowired
@@ -42,7 +44,7 @@ public class JackonFormatImpl implements Formatter {
             Date date = acmeProperties.getDate();
             boolean checkLocation = acmeProperties.isCheckLocation();
             String myDemo = acmeProperties.getMyDemo();
-            System.out.println(checkLocation + "+:+" + date + ":" + myDemo);
+            log.info("{} {} {} ",checkLocation,date,myDemo);
             return objectMapper.writeValueAsString(object);
         } catch (JsonProcessingException e) {
             e.printStackTrace();

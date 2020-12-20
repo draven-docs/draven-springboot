@@ -7,7 +7,7 @@ import java.util.Date;
 @ConfigurationProperties("acme")
 public class AcmeProperties {
 
-    private boolean checkLocation = true;
+    private boolean checkLocation = false;
 
     private Date date = new Date();
 
