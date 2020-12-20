@@ -1,0 +1,6 @@
+acme:
+  checkLocation: false
+  loginTimeout: 1608433123268
+  MyDemo: demo
+server:
+  port: 8081

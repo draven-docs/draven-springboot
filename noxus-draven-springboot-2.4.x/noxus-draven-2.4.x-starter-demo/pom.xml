@@ -18,21 +18,17 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--   <dependency>
-               <artifactId>noxus-draven-2.4.x-starter</artifactId>
-               <groupId>com.noxus.draven.boot</groupId>
-           </dependency>-->
         <dependency>
             <artifactId>noxus-draven-spring-boot-starter</artifactId>
             <groupId>com.noxus.draven.boot</groupId>
             <version>Draven1.0</version>
         </dependency>
-        <dependency>
+      <!--  <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 </project>

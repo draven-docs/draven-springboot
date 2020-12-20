@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>noxus-draven-2.4.x-starter</name>
     <artifactId>noxus-draven-spring-boot-starter</artifactId>
     <groupId>com.noxus.draven.boot</groupId>
     <version>Draven1.0</version>

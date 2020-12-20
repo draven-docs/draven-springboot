@@ -1,6 +1,7 @@
 package com.noxus.draven.starters;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 〈功能概述〉<br>
@@ -11,7 +12,7 @@ import org.springframework.boot.SpringApplication;
  * @date: 2020/12/20 01:55
  */
 
-//@SpringBootApplication
+@SpringBootApplication
 public class MyStarterApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyStarterApplication.class, args);
