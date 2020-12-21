@@ -1,7 +1,8 @@
 spring:
   cache:
-    cache-names: cache1,cache2
+    type: caffeine
+    #cache-names: "cache1,cache2"
     caffeine:
-      spec: "maximumSize=500,expireAfterAccess=600s"
-    type:
-      caffeine: caffeine
+      spec: "maximumSize=500,expireAfterAccess=10s"
+server:
+  port: 8081

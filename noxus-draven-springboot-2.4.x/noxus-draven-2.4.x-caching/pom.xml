@@ -12,6 +12,9 @@
 
     <modules>
         <module>noxus-draven-2.4.x-caching-caffeine</module>
+        <module>noxus-draven-2.4.x-caching-jdk-based</module>
+        <module>noxus-draven-2.4.x-caching-ehcache-based</module>
+        <module>noxus-draven-2.4.x-caching-jsr107-cache</module>
     </modules>
     <artifactId>noxus-draven-2.4.x-caching</artifactId>
 
