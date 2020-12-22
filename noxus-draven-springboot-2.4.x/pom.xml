@@ -15,6 +15,7 @@
         <module>noxus-draven-2.4.x-failureAnalyzer</module>
         <module>noxus-draven-2.4.x-starter</module>
         <module>noxus-draven-2.4.x-starter-demo</module>
+        <module>noxus-draven-2.4.x-tradit-deploy</module>
 
     </modules>
 
