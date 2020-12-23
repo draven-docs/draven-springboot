@@ -15,6 +15,12 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties("swagger")
 public class SwaggerProperties {
+
+
+    private static final String SWAGGER_AUTHOR = "draven";
+
+    private static final String SWAGGER_EMAIL = "123456@123.com";
+
     /**
      * 是否开启swagger，生产环境一般关闭，所以这里定义一个变量
      */
@@ -44,6 +50,16 @@ public class SwaggerProperties {
      * 接口调试地址
      */
     private String tryHost;
+
+    /**
+     * 作者信息
+     */
+    private String author = SWAGGER_AUTHOR;
+
+    /**
+     * email
+     */
+    private String email = SWAGGER_EMAIL;
 
     public Boolean getEnable() {
         return enable;
@@ -91,6 +107,22 @@ public class SwaggerProperties {
 
     public void setScans(String scans) {
         this.scans = scans;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
 

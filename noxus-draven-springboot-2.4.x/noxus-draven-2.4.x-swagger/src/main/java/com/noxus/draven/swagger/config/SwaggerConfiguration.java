@@ -1,5 +1,6 @@
 package com.noxus.draven.swagger.config;
 
+import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import com.noxus.draven.swagger.properties.SwaggerProperties;
 import io.swagger.models.auth.In;
 import org.apache.commons.lang3.reflect.FieldUtils;
@@ -31,6 +32,8 @@ import java.util.*;
  */
 
 @Configuration
+@EnableKnife4j
+//@Import(BeanValidatorPluginsConfiguration.class)
 public class SwaggerConfiguration implements WebMvcConfigurer {
     private final SwaggerProperties swaggerProperties;
 
@@ -78,7 +81,7 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title(swaggerProperties.getApplicationName() + " Api Doc")
                 .description(swaggerProperties.getApplicationDescription())
-                .contact(new Contact("lighter", null, "123456@gmail.com"))
+                .contact(new Contact(swaggerProperties.getAuthor(), null, swaggerProperties.getEmail()))
                 .version("Application Version: " + swaggerProperties.getApplicationVersion() + ", Spring Boot Version: " + SpringBootVersion.getVersion())
                 .build();
     }
