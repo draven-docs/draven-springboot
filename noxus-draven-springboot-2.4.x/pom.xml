@@ -16,6 +16,7 @@
         <module>noxus-draven-2.4.x-starter</module>
         <module>noxus-draven-2.4.x-starter-demo</module>
         <module>noxus-draven-2.4.x-tradit-deploy</module>
+        <module>noxus-draven-2.4.x-swagger</module>
 
     </modules>
 
@@ -41,6 +42,8 @@
         <minio.version>6.0.8</minio.version>
         <jasypt.version>2.1.1</jasypt.version>
         <hutool.version>4.5.16</hutool.version>
+        <swagger.version>3.0.0</swagger.version>
+        <commons.lang3.version>3.11</commons.lang3.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -59,6 +62,17 @@
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
