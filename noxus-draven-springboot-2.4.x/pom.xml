@@ -17,6 +17,7 @@
         <module>noxus-draven-2.4.x-starter-demo</module>
         <module>noxus-draven-2.4.x-tradit-deploy</module>
         <module>noxus-draven-2.4.x-swagger</module>
+        <module>noxus-draven-2.4.x-web-modules</module>
 
     </modules>
 
