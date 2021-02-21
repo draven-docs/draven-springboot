@@ -18,6 +18,8 @@
         <module>noxus-draven-2.4.x-tradit-deploy</module>
         <module>noxus-draven-2.4.x-swagger</module>
         <module>noxus-draven-2.4.x-web-modules</module>
+        <module>noxus-draven-2.4.x-data-graphql</module>
+        <module>noxus-draven-2.4.x-selenium3</module>
 
     </modules>
 
