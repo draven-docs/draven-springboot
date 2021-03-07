@@ -20,6 +20,7 @@
         <module>noxus-draven-2.4.x-web-modules</module>
         <module>noxus-draven-2.4.x-data-graphql</module>
         <module>noxus-draven-2.4.x-selenium3</module>
+        <module>noxus-draven-2.4.x-hessian</module>
 
     </modules>
 
