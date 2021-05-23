@@ -1,0 +1,25 @@
+#spring:
+#  application:
+#    name:  test
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    metrics:
+#      enabled: true
+#    prometheus:
+#      enabled: true
+#
+#  metrics:
+#    tags:
+#      application: ${spring.application.name}
+#
+#    export:
+#      prometheus:
+#        enabled: true
+#        step: 30s
+#        descriptions: true
+
