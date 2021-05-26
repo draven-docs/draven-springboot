@@ -10,6 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>noxus-draven-modules-scheduling</module>
+        <module>noxus-draven-modules-activiti</module>
+        <module>noxus-draven-modules-pulsar</module>
+        <module>noxus-draven-modules-apollo</module>
     </modules>
 
     <groupId>com.noxus.draven.boot</groupId>
