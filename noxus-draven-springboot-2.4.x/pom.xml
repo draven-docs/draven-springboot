@@ -21,13 +21,16 @@
         <module>noxus-draven-2.4.x-data-graphql</module>
         <module>noxus-draven-2.4.x-selenium3</module>
         <module>noxus-draven-2.4.x-hessian</module>
+        <module>noxus-draven-2.4.x-xml</module>
+        <module>noxus-draven-2.4.x-excel-poi</module>
+
 
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.1</version>
+        <version>2.4.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -98,18 +101,18 @@
     </build>
 
     <repositories>
-        <repository>
+        <!--<repository>
             <id>aliyun-repos</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <!--<repository>
+        </repository>-->
+        <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
-        </repository>-->
+        </repository>
         <!--<repository>
             <id>libs-milestones</id>
             <name>Spring libs</name>
