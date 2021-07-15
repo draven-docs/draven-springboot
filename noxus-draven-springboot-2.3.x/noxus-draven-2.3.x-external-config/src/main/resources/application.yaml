@@ -1,0 +1,15 @@
+# 不支持如此配置
+lll:
+  hah:
+    - names
+    - cccc
+
+
+
+
+
+customize:
+  anno: 12345
+local:
+  server:
+    port: 18989

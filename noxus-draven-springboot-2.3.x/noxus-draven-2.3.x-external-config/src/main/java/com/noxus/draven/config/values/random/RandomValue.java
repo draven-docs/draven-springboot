@@ -26,10 +26,14 @@ public class RandomValue {
     @Value("${my.secret}")
     private String mySecret;
 
+//    @Value("#{${lll.hah}}")
+//    private List<String> mySecrets;
+
     @GetMapping("RandomMono")
     public Mono RandomMono() {
         //redisName
         log.info("{}", redisName);
+        //return Mono.just(redisName + "" + mySecret + "" + mySecrets);
         return Mono.just(redisName + "" + mySecret);
     }
 }
